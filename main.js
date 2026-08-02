@@ -149,7 +149,9 @@ function profileSlide(p) {
             </div>
             <div class="photo-gradient"></div>
             <div class="photo-name">
-              <h1>${p.name}, 31 <span>✓</span></h1>
+              <h1 style="color:red;font-size:80px;position:absolute;top:50px;left:50px;z-index:9999">
+HOLA
+</h1>
               <p>📍 ${p.distance} &nbsp; · &nbsp; 👩‍💼 ${p.job}</p>
             </div>
           </div>

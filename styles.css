@@ -106,30 +106,43 @@ nav button{
 .visual-column{display:flex;flex-direction:column}
 .photo-card{position:relative;flex:1;min-height:0;border-radius:24px;overflow:hidden;box-shadow:0 14px 38px rgba(0,0,0,.16)}
 .photo-card img{width:100%;height:100%;object-fit:cover;object-position:center 18%}
-.photo-gradient{position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.88))}
+.photo-gradient{position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:170px;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.90) 0%,
+        rgba(0,0,0,.55) 45%,
+        rgba(0,0,0,0) 100%
+    );
+    z-index:2;}
 .compatibility{
   position:absolute;z-index:3;top:18px;right:18px;padding:13px 16px;border-radius:16px;
   color:#fff;background:#ff2f5b;text-align:center;box-shadow:0 8px 24px rgba(255,47,91,.35)
 }
 .compatibility strong{display:block;font-size:28px;line-height:1}
 .compatibility small{font-size:9px;font-weight:900}
-.photo-name{ position:absolute;
-  left:24px;
-  right:24px;
-  bottom:28px;
-  z-index:20;
-  color:white;}
-.photo-name h1{  margin:0 0 8px;
-  font-size:44px;
-  font-weight:900;
-  color:white;
-  text-shadow:0 3px 12px rgba(0,0,0,.75);}
+.photo-name{   position:absolute;
+    left:24px;
+    right:24px;
+    bottom:22px;
+
+    z-index:5;
+
+    color:white;}
+.photo-name h1{     margin:0;
+    font-size:42px;
+    font-weight:900;
+    color:white;
+    text-shadow:0 2px 12px rgba(0,0,0,.85);}
 .photo-name h1 span{color:#4db7ff;font-size:24px}
-.photo-name p{ margin:0;
-  font-size:16px;
-  font-weight:600;
-  color:white;
-  text-shadow:0 2px 8px rgba(0,0,0,.75);}
+.photo-name p{   margin-top:6px;
+    font-size:16px;
+    font-weight:600;
+    color:white;
+    text-shadow:0 2px 8px rgba(0,0,0,.85);}
 .decision-row{height:76px;display:flex;justify-content:center;align-items:end;gap:22px}
 .round{width:58px;height:58px;border:3px solid currentColor;border-radius:50%;background:#fff;font-size:26px;font-weight:900}
 .round.nope{color:#ff3d5f}.round.super{color:#168ef2}.round.like{color:#25c981}
