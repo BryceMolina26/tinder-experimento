@@ -1,4 +1,5 @@
 
+
 const profiles = [
   {
     "name": "Diega",
@@ -148,6 +149,18 @@ function profileSlide(p) {
               <small>COMPATIBLE</small>
             </div>
             <div class="photo-gradient"></div>
+            <h1 style="
+position:absolute;
+bottom:30px;
+left:30px;
+z-index:9999;
+color:white;
+font-size:50px;
+background:red;
+padding:10px;
+">
+${p.name}
+</h1>
             <div class="photo-name">
               <h1 style="color:red;font-size:80px;position:absolute;top:50px;left:50px;z-index:9999">
 HOLA
